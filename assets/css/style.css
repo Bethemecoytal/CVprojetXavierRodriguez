@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@font-face {        /** Importation du font **/
+    font-family: 'Raleway';        /** ont definie le nom du font **/ 
+    src: url('../fonts/Raleway-Bold.ttf');
+    src: url('../fonts/Raleway-BoldItalic.ttf');
+    src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('../fonts/Raleway-Italic.ttf');
+    src: url('../fonts/Raleway-Regular.ttf');
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family:'releway-italic' ;
+    src: url('../fonts/Raleway-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'releway-bold';
+    src: url('../fonts/Raleway-Bold.ttf');
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+header, main, footer{
+    width: 1160px;
+    margin: auto;
+}
+header { /**Style du Header**/
+    text-align: center;
+    color: white;
+}
+
+.header figcaption{
+    font-family: 'lato';
+    font-size: 1.5em;
+    margin: 2%;
+}
+
+.header h1{
+    font-family: 'lato';
+    font-size: 1.2em;
+    margin: 1%;
+}
+
+body { /** Style du Body **/
+    font-family: 'Raleway';
+    background: #782221;
+    }
+
+
+.header img { /** Style image principale **/
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 6px 6px 25px black;
+    cursor: zoom-in;
+    object-fit: cover;
+}
+.header img:hover{
+    transform: scale(1.5);
+}
+
+.header__adress {
+    background: #2c1d27;
+    color: white;
+}
+
+.header__adress  {
+    padding: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.header__adress a {
+    display: flex;
+    flex: auto;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*.header__adres a {
+    color: white;
+    text-decoration: none;
+}
+*/
+.header__adress a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__sidebar {
+    flex-basis: 30%;
+    margin-right: 30px;
+}
+
+
+.main__sidebar h2 {
+    font-family: 'Lato';
+    text-align: left;
+    background: #dbc2a4;
+    padding-left: 15px;
+    padding-block: 5px;
+}
+
+.main__sidebar li {
+    color: white;
+}
+
+.main__sidebar ul {
+    margin-left: 20px;
+}
+
+.main__sidebar p {
+    margin-left: 20px;
+    color: white;
+    text-indent: 30px;
+}
+
+.main__principal {
+    flex-basis: 70%;
+    background: white;
+    border-right: black 2px solid;
+}
+.main__principal {
+    flex-basis: 70%;
+    background-color: white;
+}
+.main__principal h2 {
+    font-family: 'Lato';
+    text-align: left;
+    background: #dbc2a4;
+    border-left: #782221 10px solid;
+    margin-left: 30px;
+    padding-block: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main__principal ul:hover {
+    border-right: #782221 5px solid;
+
+}
+
+.main__pansement{
+    
+}
+
+.main__principal h3 {
+    margin-left: 30px;
+}
+
+.main__principal ul {
+    text-align: left;
+    margin-left: 60px;
+}
+
+.main__principal strong {
+    text-align: left;
+    margin-left: 30px;
+
+}
+
+.footer { /** Style du Footer **/
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer img {
+    width: 32px;
+    height: 32px;
+    margin: auto; 
+    padding-block: 10px;
+    text-align: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.footer img:hover {
+    opacity: 0.8;
+}
+
+
+.footer small {
+    padding-block: 10px;
+    color: white;
+    text-align: center;
+}
