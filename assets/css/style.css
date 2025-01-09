@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
-@font-face {        /** Importation du font **/
-    font-family: 'Raleway';        /** ont definie le nom du font **/ 
+@font-face {
+    font-family: 'Raleway';
     src: url('../fonts/Raleway-Bold.ttf');
     src: url('../fonts/Raleway-BoldItalic.ttf');
     src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf');
@@ -13,70 +13,60 @@
     src: url('../fonts/Raleway-Regular.ttf');
 }
 @font-face {
-    font-family:'releway-italic' ;
+    font-family:'releway-italic';
     src: url('../fonts/Raleway-Italic.ttf');
 }
-
 @font-face {
     font-family: 'releway-bold';
     src: url('../fonts/Raleway-Bold.ttf');
 }
-
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-
-header, main, footer{
-    width: 1160px;
+header, main, footer {
+    width: 72.5rem;
     margin: auto;
 }
-header { /**Style du Header**/
+header {
     text-align: center;
     color: white;
 }
-
-.header figcaption{
+.header figcaption {
     font-family: 'lato';
     font-size: 1.5em;
     margin: 2%;
 }
-
-.header h1{
+.header h1 {
     font-family: 'lato';
     font-size: 1.2em;
     margin: 1%;
 }
-
-body { /** Style du Body **/
+body {
     font-family: 'Raleway';
     background: #782221;
-    }
-
-
-.header img { /** Style image principale **/
-    width: 128px;
-    height: 128px;
+}
+.header img {
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
-    border: 2px solid black;
-    box-shadow: 6px 6px 25px black;
+    border: 0.125rem solid black;
+    box-shadow: 0.375rem 0.375rem 1.5625rem black;
     cursor: zoom-in;
     object-fit: cover;
 }
-.header img:hover{
+.header img:hover {
     transform: scale(1.5);
 }
-
 .header__adress {
     background: #2c1d27;
     color: white;
 }
-
-.header__adress  {
-    padding: 15px;
+.header__adress {
+    padding: 0.9375rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -84,7 +74,6 @@ body { /** Style du Body **/
     align-items: center;
     align-content: center;
 }
-
 .header__adress a {
     display: flex;
     flex: auto;
@@ -92,53 +81,39 @@ body { /** Style du Body **/
     list-style: none;
     text-decoration: none;
 }
-
-/*.header__adres a {
-    color: white;
-    text-decoration: none;
-}
-*/
 .header__adress a:hover {
     text-decoration: underline;
 }
-
 .main {
     display: flex;
     flex-direction: row;
 }
-
 .main__sidebar {
     flex-basis: 30%;
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
-
-
 .main__sidebar h2 {
     font-family: 'Lato';
     text-align: left;
     background: #dbc2a4;
-    padding-left: 15px;
-    padding-block: 5px;
+    padding-left: 0.9375rem;
+    padding-block: 0.3125rem;
 }
-
 .main__sidebar li {
     color: white;
 }
-
 .main__sidebar ul {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
-
 .main__sidebar p {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     color: white;
-    text-indent: 30px;
+    text-indent: 1.875rem;
 }
-
 .main__principal {
     flex-basis: 70%;
     background: white;
-    border-right: black 2px solid;
+    border-right: black 0.125rem solid;
 }
 .main__principal {
     flex-basis: 70%;
@@ -148,60 +123,55 @@ body { /** Style du Body **/
     font-family: 'Lato';
     text-align: left;
     background: #dbc2a4;
-    border-left: #782221 10px solid;
-    margin-left: 30px;
-    padding-block: 5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    border-left: #782221 0.625rem solid;
+    margin-left: 1.875rem;
+    padding-block: 0.3125rem;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
 }
-
 .main__principal ul:hover {
-    border-right: #782221 5px solid;
-
+    border-right: #782221 0.3125rem solid;
 }
-
-.main__pansement{
-    
+.main__pansement {
 }
-
 .main__principal h3 {
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
-
 .main__principal ul {
     text-align: left;
-    margin-left: 60px;
+    margin-left: 3.75rem;
 }
-
 .main__principal strong {
     text-align: left;
-    margin-left: 30px;
-
+    margin-left: 1.875rem;
 }
-
-.footer { /** Style du Footer **/
+.footer {
     display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.footer img {
-    width: 32px;
-    height: 32px;
-    margin: auto; 
-    padding-block: 10px;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    opacity: 1;
+    padding: 0.9375rem;
+    margin-top: auto;
+    width: 100%;
 }
-
+.footer__icons {
+    display: flex;
+    gap: 0.3125rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+.footer img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
 .footer img:hover {
     opacity: 0.8;
 }
-
-
 .footer small {
-    padding-block: 10px;
-    color: white;
     text-align: center;
+    color: #dbc2a4;
+    font-size: 0.5625em;
 }
